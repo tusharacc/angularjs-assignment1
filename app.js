@@ -20,7 +20,7 @@ function LunchCheckController($scope, $filter) {
       var inputArr = inputStr.split(',');
       var count = 0;
       for (var i = 0; i < inputArr.length; i++){
-        if ( inputArr[i] != ''){
+        if ( inputArr[i].trim() != ''){
           console.log('input is :' + inputArr[i]);
           count  += 1;
         }
